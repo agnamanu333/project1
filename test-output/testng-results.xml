@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9801" started-at="2022-07-03T13:33:17Z" finished-at="2022-07-03T13:33:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9801" started-at="2022-07-03T13:33:17Z" finished-at="2022-07-03T13:33:27Z">
+      <class name="restassured1.file">
+        <test-method status="PASS" signature="postAGNAMANU(java.lang.String)[pri:0, instance:restassured1.file@7cdbc5d3]" name="postAGNAMANU" duration-ms="4426" started-at="2022-07-03T19:03:17Z" data-provider="postData" finished-at="2022-07-03T19:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"agna","lastName":"manu","password":"1234agna","userStatus":"1","phone":"9876543210","email":"agnamanu@gmail.com","username":"agnamanum"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAGNAMANU -->
+        <test-method status="PASS" signature="loginAGNAMANU(java.lang.String, java.lang.String)[pri:0, instance:restassured1.file@7cdbc5d3]" name="loginAGNAMANU" duration-ms="1387" started-at="2022-07-03T19:03:22Z" data-provider="loginData" depends-on-methods="restassured1.file.postAGNAMANU" finished-at="2022-07-03T19:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[agnamanum]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234agna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAGNAMANU -->
+        <test-method status="PASS" signature="putAGNAMANU(java.lang.String)[pri:0, instance:restassured1.file@7cdbc5d3]" name="putAGNAMANU" duration-ms="1310" started-at="2022-07-03T19:03:23Z" data-provider="putData" depends-on-methods="restassured1.file.postAGNAMANU" finished-at="2022-07-03T19:03:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"agna","lastName":"manu","password":"1234agnam","userStatus":"1","phone":"9876543210","email":"agnamanu@gmail.com","username":"agnamanum"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putAGNAMANU -->
+        <test-method status="PASS" signature="deleteAGNAMANU(java.lang.String)[pri:0, instance:restassured1.file@7cdbc5d3]" name="deleteAGNAMANU" duration-ms="1350" started-at="2022-07-03T19:03:24Z" data-provider="deleteData" depends-on-methods="restassured1.file.putAGNAMANU" finished-at="2022-07-03T19:03:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[agnamanum]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAGNAMANU -->
+        <test-method status="PASS" signature="getAGNAMANU()[pri:0, instance:restassured1.file@7cdbc5d3]" name="getAGNAMANU" duration-ms="1301" started-at="2022-07-03T19:03:26Z" depends-on-methods="restassured1.file.putAGNAMANU" finished-at="2022-07-03T19:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAGNAMANU -->
+      </class> <!-- restassured1.file -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
